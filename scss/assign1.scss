@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'mixins';
+
+$colors: #666666;
+$height: 36px;
+$width: 300px;
+$border: 1px solid #ccc;
+$font-style: SegoUI;
+$font-size: 13px;
+$padding-left: 10px;
+$background-color: #ffffff;
+$colro: #999999;
+$cursor: disabled=true;
+$max: 10;
+
+
+
+.input{
+   color: $colors;
+   height: $height;
+   width: $width;
+   border: $border;
+   font-size: $font-size;
+   font-style: $font-style;
+   padding-left: $padding-left ;
+   background-color: $background-color;
+
+
+}
+.disabled1{
+    @extend .input;
+    $background-color: #eeeeee;
+    color: $colro;
+    cursor: not-allowed;   
+}
+
+.error{
+    @extend .input;
+    background-color: #fde7e1;
+    border: 1px solid #f44336;
+    color: #f44336;
+
+}
+

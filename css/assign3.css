@@ -1,0 +1,47 @@
+.btn1 {
+  background-color: orange; }
+  .btn1:hover {
+    background-color: red; }
+
+.btn1 {
+  background-color: brown; }
+  .btn1:hover {
+    background-color: red; }
+
+.one {
+  background-color: green;
+  width: 30%;
+  height: 100px;
+  padding: 50px;
+  border: 7px solid yellow;
+  position: absolute;
+  top: 0; }
+
+.two {
+  background-color: lightgreen;
+  width: 30%;
+  height: 100px;
+  padding: 50px;
+  border: 7px solid yellow;
+  position: absolute;
+  top: 0;
+  left: 38%; }
+
+.three {
+  background-color: rgb(95, 247, 214);
+  width: 30%;
+  height: 100px;
+  padding: 50px;
+  border: 7px solid red;
+  position: absolute;
+  top: 250px; }
+
+.four {
+  background-color: lightpink;
+  width: 30%;
+  height: 100px;
+  padding: 50px;
+  border: 7px solid red;
+  position: absolute;
+  top: 250px;
+  left: 38%; }

@@ -1,0 +1,85 @@
+@import 'variables';
+@import 'mixins';
+
+
+//button
+$bborder-radius: 3px;
+$bpadding: 12px 15px 12px 15px;
+$bbackground-color: #8bc34a;
+$bborder: 0;
+$bpborder: 1px solid #8bc34a;
+$bmin-width: 110px;
+$bfont-family: "SegoeUI SemiBold"; 
+$bfont-size: 16px;
+$bcolor: #FFFFFF; 
+//hover
+//primary
+$bhpbackground-color: #9dce5d;
+$bhpcolor: #ffffff;
+$bhpborder: 1px solid #9dce5d;
+//disabled
+$bdpbackground-color: #eeeeee;
+$bdpcolor: #999999;
+$bdpborder: 1px solid #eeeeee;
+//secondary
+$bsbackground-color: #FFFFFF; 
+$bscolor: #2095f2; 
+$bsborder: 1px solid #2095f2; 
+//hover
+$bshbackground-color: #2095f2; 
+$bshcolor: #FFFFFF; 
+$bshborder: 1px solid #2095f2; 
+//disabled
+$bsdbackground-color: #ffffff; 
+$bsdcolor: #999999; 
+$bsdborder: 1px solid #cccccc; 
+
+
+.button{
+    border-radius: $bborder-radius; 
+    padding: $bpadding; 
+    background-color: $background-color; 
+    border: $bborder; 
+    min-width: $bmin-width; 
+    font-family: $bfont-family; 
+    font-size: $bfont-size; 
+    color: $bcolor; 
+}
+.primary{
+    @extend .button;
+    border: $bpborder;
+    color: $bcolor;
+    background-color: $bbackground-color;
+
+    &:hover{
+        background-color: $bhpbackground-color;
+        color: $bhpcolor;
+        border: $bhpborder;
+    }
+
+}
+.primary2{
+    @extend .button;
+    background-color: $bdpbackground-color; 
+    color: $bdpcolor; 
+    border: $bdpborder; 
+    cursor: not-allowed;
+}
+.secondary{
+    @extend .button;
+    background-color: $bsbackground-color; 
+    color: $bscolor; 
+    border: $bsborder; 
+    &:hover{
+        background-color: $bshbackground-color; 
+         color: $bshcolor; 
+          border: $bshborder; 
+    }
+
+}
+.secondary2{
+    background-color: $bsdbackground-color; 
+    color: $bsdcolor; 
+    border: $bsdborder; 
+    cursor: not-allowed;
+}

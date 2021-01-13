@@ -1,0 +1,45 @@
+$base-color: green;
+$base-color2:rgb(95, 247, 214);
+@import "button1";
+@import "button2";
+@mixin first
+{
+  width: 30%;
+  height: 100px;
+  padding: 50px;
+  border: 7px solid yellow;   
+}
+@mixin second
+ {
+     width: 30%;
+     height: 100px;
+     padding: 50px;
+     border: 7px solid red;
+    
+}
+.one{
+    background-color: $base-color;
+    @include first;
+    position: absolute;
+    top:0
+}
+.two{
+    background-color: lightgreen;
+    @include first();
+    position: absolute;
+    top:0;
+    left:38%
+}
+.three{
+    background-color: $base-color2;
+    @include second();
+    position: absolute;
+    top:250px;
+}
+.four{
+    background-color: lightpink;
+    @include second();
+    position: absolute;
+    top:250px;
+    left: 38%;
+}
